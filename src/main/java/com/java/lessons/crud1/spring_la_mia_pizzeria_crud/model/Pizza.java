@@ -49,14 +49,14 @@ public class Pizza {
     }
 
     @NotBlank
-    private String img_url;
+    private String imgUrl;
 
     public String getImgUrl() {
-        return this.img_url;
+        return this.imgUrl;
     }
 
     public void setImgUrl(String imgUrl) {
-        this.img_url = imgUrl;
+        this.imgUrl = imgUrl;
     }
     @NotNull
     private BigDecimal price;
