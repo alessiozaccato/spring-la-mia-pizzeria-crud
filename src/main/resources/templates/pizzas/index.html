@@ -19,6 +19,11 @@
     <main>
         <section>
             <div class="container">
+                <form th:action="@{/pizzas/searchByName}">
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="name" required>
+                    </div>
+                </form>
                 <h1 class="my-4">Elenco pizze: </h1>
                 <div class="row" th:if="${pizzas.size() > 0}">
                     <div th:each="pizza : ${pizzas}" th:object="${pizza}" class="col-md-4 mb-4">
